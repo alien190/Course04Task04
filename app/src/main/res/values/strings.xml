@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Course04Task04</string>
+    <string name="picasso_local">Picasso локально.</string>
+    <string name="picasso_remote">Picasso удаленно</string>
+    <string name="glide_local">Glide локально</string>
+    <string name="glide_remote">Glide удаленно</string>
 </resources>

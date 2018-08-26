@@ -27,7 +27,7 @@ public class MainFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (mView != null) {
+        if (mView == null) {
             mView = inflater.inflate(R.layout.fr_main, container, false);
         }
         return mView;
