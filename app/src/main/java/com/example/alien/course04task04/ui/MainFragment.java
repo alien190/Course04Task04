@@ -81,5 +81,24 @@ public class MainFragment extends Fragment {
         mGlideRemoteLoader.getLoadTime().observe(this, mTvFourth::setText);
     }
 
+    @Override
+    public void onDestroy() {
 
+        mPicassoLocalLoader = null;
+        mPicassoRemoteLoader = null;
+        mGlideLocalLoader = null;
+        mGlideRemoteLoader = null;
+
+        mIvFirst = null;
+        mIvSecond = null;
+        mIvThird = null;
+        mIvFourth = null;
+
+        mTvFirst = null;
+        mTvSecond = null;
+        mTvThird = null;
+        mTvFourth = null;
+
+        super.onDestroy();
+    }
 }
