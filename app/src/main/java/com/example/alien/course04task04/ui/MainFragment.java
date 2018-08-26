@@ -68,16 +68,16 @@ public class MainFragment extends Fragment {
     }
 
     private void startLoading() {
-        mPicassoLocalLoader.loadImage("", mIvFirst);
+       // mPicassoLocalLoader.loadImage("", mIvFirst);
         mPicassoLocalLoader.getLoadTime().observe(this, mTvFirst::setText);
 
-        mPicassoRemoteLoader.loadImage("", mIvSecond);
+        mPicassoRemoteLoader.loadImage("https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Best-Amazing-Images-For-Desktop-PIC-WPD0012593.jpg", mIvSecond);
         mPicassoRemoteLoader.getLoadTime().observe(this, mTvSecond::setText);
 
-        mGlideLocalLoader.loadImage("", mIvThird);
+        //mGlideLocalLoader.loadImage("", mIvThird);
         mGlideLocalLoader.getLoadTime().observe(this, mTvThird::setText);
 
-        mGlideRemoteLoader.loadImage("", mIvFourth);
+        //mGlideRemoteLoader.loadImage("", mIvFourth);
         mGlideRemoteLoader.getLoadTime().observe(this, mTvFourth::setText);
     }
 
