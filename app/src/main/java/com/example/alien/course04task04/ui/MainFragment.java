@@ -42,8 +42,8 @@ public class MainFragment extends Fragment {
 
     private ILoader mPicassoLocalLoader = new PicassoLoader();
     private ILoader mPicassoRemoteLoader = new PicassoLoader();
-    private ILoader mGlideLocalLoader = new GlideLoader();
-    private ILoader mGlideRemoteLoader = new GlideLoader();
+    private ILoader mGlideLocalLoader = new GlideLoader(getContext());
+    private ILoader mGlideRemoteLoader = new GlideLoader(getContext());
 
 
     public static MainFragment newInstance() {
